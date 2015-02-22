@@ -48,13 +48,13 @@ each measurement.</li>
 <li>Merge x_test, y_test and sub_test data frames together using the cbind().</li>
 <li>Repeat step 6 with x_train, y_train and sub_train data frames.</li>
 <li>Merge x_train and x_test data frames with rbind().  Store this into a new data frame called x_train_test.</li>
-<li>Using grep, find the variable names which contain mean() or std() in their name.  The features_info.txt file states the variables with the "()" after mean or std indicate mean and standard deviation respectively.  Store the results in mean_cols and std_cols.</li>
+<li>Using grep, find the variable names which contain mean() or std() in their name.  The features_info.txt file states the variables with the "()" after mean or std indicate mean and standard deviation respectively.  There are 33 variables each for mean and standard deviation.  Store the results in mean_cols and std_cols.</li>
 <li>Subset the data frame created from step 8, x_train_test, using variables required for project.  I selected Subject, Activity, and the mean and standard deviation variables found from the prior step.  This is subsetted data frame is stored in tidy_data.</li>
 <li>Using sub() and gsub(), cleanup variable names.  E.g. Remove duplicate words and characters such as ".", "(", ")" and ",".</li>
 <li>Sort the tidy_data data frame using arrange() by Subject and Activity variables.</li>
 <li>Since we are asked to provide averages of the variables I used the group_by() function to do so.  The groups selected were Subject and Activity.</li>
 <li>Finally, aggregate or summarize data using the summarize_each function on the data frame created in step 13.</li>
-<li>The tidy_data frame is now complete per project requirements.  </li>
+<li>The tidy_data frame is now complete per project requirements.  The data frame contains 10299 rows and 68 columns.</li>
 </ol>
 
 <h2>CodeBook.md</h2>
