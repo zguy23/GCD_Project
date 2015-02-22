@@ -45,5 +45,18 @@ each measurement.</li>
 <li>Update the default column names in x<em>train and x</em>test data frames using the names() function with the data from step 2.</li>
 <li>Update the default column name in the sub<em>train, sub</em>test, y<em>train and y</em>test data frames.  These data frames only contain one column, Subject and Activity information.  The names() function was used here again.</li>
 <li>Replace the activity number with its character representation in y<em>train and y</em>test by looking up the meaning in the activity_labels.txt file.  This was done using gsub(). </li>
-<li>List item</li>
+<li>Merge x<em>test, y</em>test and sub_test data frames together using the cbind().</li>
+<li>Repeat step 6 with x<em>train, y</em>train and sub_train data frames.</li>
+<li>Merge x<em>train and x</em>test data frames with rbind().</li>
+<li>Using grep, find the variable names which contain mean() or std() in their name.  The features<em>info.txt file states the variables with the "()" after mean or std indicate mean and standard deviation respectively.  Store the results in mean</em>cols and std_cols.</li>
+<li>Subset the data frame created from step 8, x<em>train</em>test, using variables required for project.  I selected Subject, Activity, and the mean and standard deviation variables found from the prior step.  This is subsetted data frame is stored in tidy_data.</li>
+<li>Using sub() and gsub(), cleanup variable names.  E.g. Remove duplicate words and characters such as ".", "(", ")" and ",".</li>
+<li>Sort the tidy_data data frame using arrange() by Subject and Activity variables.</li>
+<li>Since we are asked to provide averages of the variables I used the group_by() function to do so.  The groups selected were Subject and Activity.</li>
+<li>Finally, aggregate or summarize data using the summarize_each function on the data frame created in step 13.</li>
+<li>The tidy_data frame is now complete per project requirements.  </li>
 </ol>
+
+<h2>CodeBook.md</h2>
+
+<p>This file contain variable names and descriptions of each.</p>
