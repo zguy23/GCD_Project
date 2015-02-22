@@ -47,7 +47,7 @@ each measurement.</li>
 <li>Replace the activity number with its character representation in y_train and y_test by looking up the meaning in the activity_labels.txt file.  This was done using gsub(). </li>
 <li>Merge x_test, y_test and sub_test data frames together using the cbind().</li>
 <li>Repeat step 6 with x_train, y_train and sub_train data frames.</li>
-<li>Merge x_train and x_test data frames with rbind().</li>
+<li>Merge x_train and x_test data frames with rbind().  Store this into a new data frame called x_train_test.</li>
 <li>Using grep, find the variable names which contain mean() or std() in their name.  The features_info.txt file states the variables with the "()" after mean or std indicate mean and standard deviation respectively.  Store the results in mean_cols and std_cols.</li>
 <li>Subset the data frame created from step 8, x_train_test, using variables required for project.  I selected Subject, Activity, and the mean and standard deviation variables found from the prior step.  This is subsetted data frame is stored in tidy_data.</li>
 <li>Using sub() and gsub(), cleanup variable names.  E.g. Remove duplicate words and characters such as ".", "(", ")" and ",".</li>
