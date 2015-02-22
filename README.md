@@ -14,4 +14,7 @@ above mentioned website.  The run_analysis.R contains the actual code used to pr
 downloaded raw dataset to the tidy data set that it produces.  The CodeBook.md contains information about
 the variables and information about how I have chose to summarize the data.
 
+## Before Running the run_analysis.R Script
+
+
 ## This R script assumes that the dataset is in the working directory
