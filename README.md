@@ -17,6 +17,24 @@ above mentioned website.  The run_analysis.R contains the actual code used to pr
 downloaded raw dataset to the tidy data set that it produces.  The CodeBook.md contains information about
 the variables and information about how I have chose to summarize the data.</p>
 
-<h2>Before Running the run_analysis.R Script</h2>
+<h2>Project Objective</h2>
+
+<ol>
+<li>Merges the training and the test sets to create one data set.</li>
+<li>Extracts only the measurements on the mean and standard deviation for
+each measurement.</li>
+<li>Uses descriptive activity names to name the activities in the data set</li>
+<li>Appropriately labels the data set with descriptive variable names. </li>
+<li>From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.</li>
+</ol>
+
+<h2>run_analysis.R Script</h2>
+
+<p>*Notes prior to execution</p>
+
+<ol>
+<li>Download the data from the URL above and unzip it in the directory of choice.</li>
+<li>Download the run_analysis.R script into the directory above.  This directory should contain the "UCI HAR Dataset" directory along with the test and train subdirectories.  </li>
+</ol>
 
 <h2>This R script assumes that the dataset is in the working directory</h2>
