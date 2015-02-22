@@ -1,6 +1,6 @@
 # Getting and Cleaning Data class project
 
-This README is for the Getting and Cleaning Data class project at John Hopkins University.  The data used for 
+This README is for the Getting and Cleaning Data class project at Johns Hopkins University.  The data used for 
 this course can be downloaded at the following website.  
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
